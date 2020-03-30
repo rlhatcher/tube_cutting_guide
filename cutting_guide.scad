@@ -1,6 +1,6 @@
 $fn = 100;
 
-tube_od = 56.3; // bt-80 = 66, bt-70 = 56.3
+tube_od = 57; // bt-80 = 66, bt-70 = 56.3
 thickness = 20;
 width=10;
 wall=2.5;
@@ -38,4 +38,3 @@ translate([90, 0, 0]) {
         }
     }
 }
-
