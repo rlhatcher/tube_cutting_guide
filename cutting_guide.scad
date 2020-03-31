@@ -1,6 +1,11 @@
-$fn = 100;
+$fn = 200;
 
-tube_od = 57; // bt-80 = 66, bt-70 = 56.3
+// Common Tube sizes
+// bt-80 = 66
+// bt-70 = 56.3
+// Pringles = 75
+
+tube_od = 66.6; 
 thickness = 20;
 width=10;
 wall=2.5;
@@ -23,7 +28,7 @@ difference() {
 }
 
 
-translate([90, 0, 0]) {
+translate([tube_od*1.5, 0, 0]) {
     difference() {
         union() {
             cylinder(h=width, d=thickness+tube_od);
